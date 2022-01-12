@@ -333,7 +333,7 @@ def main(testing=False, testBuild=False):
         saveResults.rename(
             columns={
                 'Trend': f'Trend ({configManager.daysToLookback}Days)',
-                'Breaking-Out': 'Breakout ({configManager.daysToLookback}Days)'
+                'Breaking-Out': f'Breakout ({configManager.daysToLookback}Days)'
             },
             inplace=True
         )
